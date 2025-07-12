@@ -1,0 +1,108 @@
+@media (max-width: 992px) {
+    .nav-links {
+        display: none; /* Hide on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on smaller screens */
+    }
+
+    .sticky-header .container {
+        position: relative;
+    }
+
+    .search-bar {
+        position: static; /* Position normally within flow */
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-section p {
+        font-size: 1.1em;
+    }
+
+    .scholarships-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .testimonial-card {
+        flex: 0 0 90%; /* One card at a time on mobile */
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack on mobile */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-content .quick-links ul {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .scholarships-section, .testimonials-section, .about-content, .contact-section, .team-section {
+        padding: 50px 0;
+    }
+
+    .scholarships-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    .scholarship-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-member {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .contact-info-map {
+        margin-top: 30px;
+    }
+
+    .main-footer .footer-content {
+        gap: 20px;
+    }
+}
